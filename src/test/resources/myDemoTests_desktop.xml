@@ -1,0 +1,52 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web Demo Suite" parallel="tests" thread-count="30" verbose="0">
+
+	<test name="Windows chrome Demo App" parallel="methods"  enabled="true">
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="browserVersion" value="latest"></parameter>
+		<parameter name="platformName" value="Windows 11"></parameter>
+		<parameter name="sauce_tags" value="Demo,Web,W3,Visual"></parameter>
+		<parameter name="sauce_screenResolution" value="2560x1600"></parameter>
+		<classes>
+			<class name="com.saucelabs.tests.DemoBasicTest"></class>
+			<class name="com.saucelabs.tests.DemoLoginTest"></class>
+		</classes>
+	</test>
+
+	<test name="Mac firefox Demo App" parallel="methods"  enabled="true">
+		<parameter name="browserName" value="firefox"></parameter>
+		<parameter name="browserVersion" value="latest"></parameter>
+		<parameter name="platformName" value="Windows 11"></parameter>
+		<parameter name="sauce_tags" value="Demo,Web,W3,Visual"></parameter>
+		<parameter name="sauce_screenResolution" value="2560x1600"></parameter>
+		<classes>
+			<class name="com.saucelabs.tests.DemoBasicTest"></class>
+			<class name="com.saucelabs.tests.DemoLoginTest"></class>
+		</classes>
+	</test>
+
+	<test name="Windows Edge Demo App" parallel="methods"  enabled="true">
+		<parameter name="browserName" value="microsoftedge"></parameter>
+		<parameter name="browserVersion" value="latest"></parameter>
+		<parameter name="platformName" value="Windows 11"></parameter>
+		<parameter name="sauce_tags" value="Demo,Web,W3,Visual"></parameter>
+		<parameter name="sauce_screenResolution" value="2560x1600"></parameter>
+		<classes>
+			<class name="com.saucelabs.tests.DemoBasicTest"></class>
+			<class name="com.saucelabs.tests.DemoLoginTest"></class>
+		</classes>
+	</test>
+
+	<test name="Mac safari Demo App" parallel="methods"  enabled="true">
+		<parameter name="browserName" value="safari"></parameter>
+		<parameter name="browserVersion" value="latest"></parameter>
+		<parameter name="platformName" value="macOS 13"></parameter>
+		<parameter name="sauce_tags" value="Demo,Web,W3,Visual"></parameter>
+		<parameter name="sauce_screenResolution" value="2048x1536"></parameter>
+		<classes>
+			<class name="com.saucelabs.tests.DemoBasicTest"></class>
+			<class name="com.saucelabs.tests.DemoLoginTest"></class>
+		</classes>
+	</test>
+
+</suite>
