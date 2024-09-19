@@ -155,4 +155,15 @@ public class BaseTest {
         return driver.get();
     }
 
+    public void waiting(int sec){
+        try
+        {
+            Thread.sleep(sec*1000);
+        }
+        catch(InterruptedException ex)
+        {
+            Thread.currentThread().interrupt();
+        }
+    }
+
 }

@@ -16,5 +16,7 @@ public class DemoBasicTest extends com.saucelabs.tests.BaseTest {
 
         String getTitle = driver.getTitle();
         Assert.assertEquals(getTitle, "Swag Labs");
+
+        waiting(30);
     }
 }

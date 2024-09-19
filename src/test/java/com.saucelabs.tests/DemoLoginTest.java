@@ -25,6 +25,8 @@ public class DemoLoginTest extends BaseTest {
         // verify we in the product page
         String currentURL = driver.getCurrentUrl();
         Assert.assertEquals(currentURL, WEB_URL + "inventory.html");
+
+        waiting(30);
     }
 
     @Test
@@ -42,5 +44,7 @@ public class DemoLoginTest extends BaseTest {
         // verify we still in main page
         String currentURL = driver.getCurrentUrl();
         Assert.assertEquals(currentURL, WEB_URL);
+
+        waiting(30);
     }
 }
